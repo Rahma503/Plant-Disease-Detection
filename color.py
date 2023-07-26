@@ -127,6 +127,7 @@ import numpy as np
 
 class_names_pot= data.class_names
 class_names_pot
+plt.figure(figsize=(15,14))
 for images, labels in test_ds.take(1):
     for i in range(9):
         ax = plt.subplot(3, 3, i+1)
@@ -214,7 +215,7 @@ class_names_ch= data_ch.class_names
 class_names_ch
 
 
-
+plt.figure(figsize=(15,14))
 for images, labels in test_ds_ch.take(1):
     for i in range(9):
         ax = plt.subplot(3, 3, i+1)
@@ -294,7 +295,7 @@ his_str= model_str.fit(train_ds_str,epochs=5,batch_size=32,verbose=1,validation_
 scores_str= model_str.evaluate(test_ds_str)
 class_names_str= data_str.class_names
 class_names_str
-
+plt.figure(figsize=(15,14))
 for images, labels in test_ds_str.take(1):
     for i in range(9):
         ax = plt.subplot(3, 3, i+1)
@@ -365,7 +366,7 @@ his_pep= model_pep.fit(train_ds_pep,epochs=5,batch_size=32,verbose=1,validation_
 scores_pep= model_pep.evaluate(test_ds_pep)
 class_names_pep= data_pep.class_names
 class_names_pep
-
+plt.figure(figsize=(15,14))
 for images, labels in test_ds_pep.take(1):
     for i in range(9):
         ax = plt.subplot(3, 3, i+1)
@@ -440,7 +441,7 @@ his_p= model_p.fit(train_ds_p,epochs=5,batch_size=32,verbose=1,validation_data=v
 scores_p= model_p.evaluate(test_ds_p)
 class_names_p= data_p.class_names
 class_names_p
-
+plt.figure(figsize=(15,14))
 for images, labels in test_ds_p.take(1):
     for i in range(9):
         ax = plt.subplot(3, 3, i+1)
@@ -498,7 +499,7 @@ his_a= model_a.fit(train_ds_a,epochs=5,batch_size=32,verbose=1,validation_data=v
 scores_a= model_a.evaluate(test_ds_a)
 class_names_a= data_A.class_names
 class_names_a
-
+plt.figure(figsize=(15,14))
 for images, labels in test_ds_a.take(1):
     for i in range(9):
         ax = plt.subplot(3, 3, i+1)
@@ -554,7 +555,7 @@ his_t= model_t.fit(train_ds_t,epochs=5,batch_size=32,verbose=1,validation_data=v
 scores_t= model_t.evaluate(test_ds_t)
 class_names_t= data_t.class_names
 class_names_t
-
+plt.figure(figsize=(15,14))
 for images, labels in test_ds_t.take(1):
     for i in range(9):
         ax = plt.subplot(3, 3, i+1)
@@ -609,7 +610,7 @@ his_g= model_g.fit(train_ds_g,epochs=5,batch_size=32,verbose=1,validation_data=v
 scores_g= model_g.evaluate(test_ds_g)
 class_names_g= data_g.class_names
 class_names_g
-
+plt.figure(figsize=(15,14))
 for images, labels in test_ds_g.take(1):
     for i in range(9):
         ax = plt.subplot(3, 3, i+1)
@@ -663,7 +664,7 @@ metrics=['accuracy']
 scores_c= model_c.evaluate(test_ds_c)
 class_names_c= data_c.class_names
 class_names_c
-
+plt.figure(figsize=(15,14))
 for images, labels in test_ds_c.take(1):
     for i in range(9):
         ax = plt.subplot(3, 3, i+1)
