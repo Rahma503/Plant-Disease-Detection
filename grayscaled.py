@@ -751,10 +751,3 @@ for images, labels in test_ds_c.take(1):
         actual_class = class_names_c[labels[i]]
         plt.title(f"Actual:{actual_class},\n Prediction : {prediction_class},\n confidence {confidence}")
         plt.axis("off")
-
-
-# In[ ]:
-
-
-
-
